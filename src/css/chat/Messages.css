@@ -1,0 +1,37 @@
+.infinite-container-message {
+  height: 300px;
+  padding: 8px 24px;
+  overflow: auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+.loading-container-message {
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+#scroll-top-id {
+  position: absolute;
+  top:0px;
+  right:0px;
+  width: 100px;
+  background: #a00;
+}
+
+#content-message-id {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0 15px 0 15px;
+  transition: 1s;
+}
+#content-message-id::-webkit-scrollbar-button{
+  background: rgba(0%, 0%, 60%, .6);
+}
+#content-message-id::-webkit-scrollbar-button:active{
+  background: rgba(0%, 40%, 0%, .6);
+}
+

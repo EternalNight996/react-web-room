@@ -1,0 +1,212 @@
+@import '~antd/dist/antd.css';
+.register-layout, .register-layout2 {
+  overflow: auto;
+  box-sizing: content-box;
+  margin: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px){
+  .register-layout {width: 400px;}
+}
+@media screen and (min-width: 920px) and (max-width: 1024px){
+  .register-layout {width: 440px;}
+}
+@media screen and (min-width: 1024px){
+  .register-layout {width: 440px;}
+}
+
+.register-form {
+  width: 100%;
+  padding: 40px 20px 0px 20px;
+  background: none;
+  color: #0a0;
+}
+.form-input Input {
+  /*color: #a00;*/
+}
+.site-form-item-icon {
+  /*color: #0a0;*/
+}
+.register-box-left-right {
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 10px 0px 10px;
+}
+.register-box-left {
+  float: left;
+  box-sizing: border-box;
+  height: 100%;
+}
+.register-box-right {
+  float: right;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.btnLight {
+  position: relative;
+  height:40px;
+  width: 140px;
+  line-height: 40px;
+  display: inline-block;
+  color: var(--colorWhite);
+  background-color: var(--colorGreen);
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 5px;
+}
+.btnLight Input {
+  position: absolute;
+  cursor: pointer;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+/*提交按钮特效*/
+.btn {
+  position: relative;
+  height:40px;
+  width: 140px;
+  line-height: 40px;
+  display: inline-block;
+  color: var(--colorBlue);
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 5px;
+  transition: 1s;
+  -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 500ms linear;
+}
+.btn-register {
+  left: 0px;
+}
+.btn Input {
+  position: absolute;
+  cursor: pointer;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+/*hover是指针停留在按钮上面触发的动作*/
+.btn:hover {
+  position:relative;
+  background: var(--colorBlue);
+  color: #fff;
+  border-radius: 5px;
+  /*上面值设置是1s，这在1s内完成这个增值,实现炫酷的效果*/
+  box-shadow: 0 0 5px var(--colorBlue),
+              0 0 25px var(--colorBlue),
+              0 0 50px var(--colorBlue),
+              0 0 100px var(--colorBlue);
+  font-size: 20px;
+}
+
+/*提交按钮围绕的光标特效*/
+.btn span {
+  position: absolute;
+  display: block;
+}
+
+/*在我们外观看到只有一个光标，
+ * 事实上是由四个光标在不同时间控制触发实现的*/
+.btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  /*设置旋转90度渐变背景*/
+  background: linear-gradient(90deg, transparent, var(--colorBlue));
+  /*CSS3 动画动作, btn-anim1 事实上是个类似函数的非内置名
+   * 1s内完成一个函数值，infinite相当是while(1),让动画循环
+   * linear规定从开始到结束的速度相同的动画*/
+  /*animation: btn-anim1 1s linear infinite;*/
+  animation-name: btn-anim1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 2;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate;*/
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--colorBlue));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--colorBlue));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--colorBlue));
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+

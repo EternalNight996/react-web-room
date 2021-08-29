@@ -1,0 +1,11 @@
+.content-container {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 0px 0px 15px 0px;
+  background: var(--colorDark);
+  border: 1px solid var(--colorDarkBlue);
+  border-radius: 5px;
+}

@@ -1,0 +1,14 @@
+yarn-error.log
+yarn.lock
+.DS_Store
+node_modules/
+/dist/
+build
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

@@ -1,0 +1,33 @@
+@import '~antd/dist/antd.css';
+.menus-tool {
+}
+.menus-tool-container {
+  position: fixed;
+  width: 60px;
+  bottom: 70px;
+  right: 30px;
+  transition: .5s;
+}
+
+.menus-tool-button {
+  width: 40px;
+  height: 40px;
+  z-index: 2000;
+  background: var(--colorDark);
+  border: 1px solid var(--colorDarkBlue);
+}.menus-tool-button:hover{background: var(--colorOpacityDark);}
+
+.menu-tool-item {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  color: var(--colorLightBlue);
+  border-bottom: 1px solid var(--colorDarkBlue);
+  background: none;
+  font-size: 14px;
+}.menu-tool-item:hover {background: var(--colorOpacityGreen);}
+
+.menu-tool-item-end {
+  border-bottom: 0px solid var(--colorDarkBlue);
+}
+

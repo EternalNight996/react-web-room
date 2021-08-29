@@ -1,0 +1,119 @@
+@import '~antd/dist/antd.css';
+:root {
+  --iconSize: 20px;
+  --buttonSize: 40px;
+
+  --fontSizeSmall: 12px;
+  --fontSize: 14px;
+  --fontSizeMiddle: 15px;
+  --fontSizeLarge: 17px;
+  --fontSizeLarge_: 19px;
+  --fontSizeLarge__: 21px;
+  --fontSizeLarge___: 26px;
+
+  --colorOpacityLight: rgba(90%,90%,90%, 30%);
+  --colorOpacityGrey: rgba(65%,65%,65%, 50%);
+  --colorOpacityDark: rgba(0%,0%,0%, 40%);
+  --colorOpacityBlue: rgba(30%,30%,50%, 40%);
+  --colorOpacityGreen: rgba(0%,100%,0%, 10%);
+
+  --colorBlack: #000;
+  --colorWhite: #fff;
+  --colorGrey: #e1e2e3;
+  --colorGreen: #00b129;
+  --colorYellow: #ffd697;
+  --colorBlue: #03e9f4;
+  --colorRed: #a00;
+
+  --colorLight: #f0f1f2;
+  --colorLightDark: #999;
+  --colorLightBlue: #3E6084;
+  --colorDark: #1D2939;
+  --colorDarkGrey: #1B1C1D;
+  --colorDarkBlue: #233953;
+  --colorDarkDeep: #0c1219;
+
+  --MaxWidthLarge: 1024px;
+  --MaxWidthMiddle: 920px;
+  --MaxWidthSmall: 768px;
+
+  --MenusMaxWidth: 256px;
+  --MenusMaxHeight: 256px;
+
+  --DrawerMaxWidth: 256px;
+  --DrawerMaxHeight: 256px;
+
+  --DrawerWidth: 256px;
+  --DrawerHeight: 256px;
+}
+
+body {
+  font-family: "KaiTi";
+  scrollbar-color: rebeccapurple rgba(0,0,0,.4);
+  scrollbar-width: thin;
+  scrollbar-arrow-color: #f4ae21; /**//*三角箭头的颜色*/
+  scrollbar-face-color: #333; /**//*立体滚动条的颜色*/
+  scrollbar-3dlight-color: #666; /**//*立体滚动条亮边的颜色*/
+  scrollbar-highlight-color: #666; /**//*滚动条空白部分的颜色*/
+  scrollbar-shadow-color: #999; /**//*立体滚动条阴影的颜色*/
+  scrollbar-darkshadow-color: #666; /**//*立体滚动条强阴影的颜色*/
+  scrollbar-track-color: #666; /**//*立体滚动条背景颜色*/
+  scrollbar-base-color:#f8f8f8; /**//*滚动条的基本颜色*/
+}
+div {
+}
+span {
+  font-size: var(--fontSize);
+  color: var(--colorLightDark);
+}
+p {
+  font-size: var(--fontSizeMiddle);
+  color: var(--colorBlack);
+  text-overflow: ellipsis;
+  word-wrap:break-word;
+  word-break:break-all;
+}
+label {
+  font-size: var(--fontSizeMiddle);
+  color: var(--colorGreen);
+}
+
+h2 {
+  color: var(--colorLightDark);
+}
+
+.title {
+  font-size: var(--fontSizeLarge_);
+  color: var(--colorWhite);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar:active {
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(100%,0,0,0.8);
+  background: rgba(0%,0%,0%,.6);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(60%, 0%, 40%, .7);
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 0;
+  background: rgba(90%,90%,90%,.1);
+}
+::-webkit-scrollbar-track-piece{
+}
+::-webkit-scrollbar-corner{
+}
+::-webkit-scrollbar-button{
+  background: rgba(5%,0%, 40%, .3);
+}
+::-webkit-scrollbar-button:active {
+  background: rgba(0%, 70%, 0%, .7);
+}
+::-webkit-resizer{
+}

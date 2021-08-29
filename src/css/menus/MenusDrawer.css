@@ -1,0 +1,74 @@
+@import '~antd/dist/antd.css';
+.menus-drawer-container {
+}
+
+.sider-menu-button {
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+}
+.button1 {
+  position: fixed;
+  top: 40px;
+  display: inline-block;
+}
+.button2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+@media screen and (max-width: 768px){
+  .button1 {display: none;}
+  .button2 {display: inline-block;}
+}
+
+.sider-menu-button-icon {
+  font-size: 25px;
+}
+
+.sider-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+}
+
+.sider-button {
+  font-size: 15px;
+  width: 100%;
+  left: 0px;
+  text-align: left;
+}
+
+.menu-item {
+  height: 42px;
+  width: 100%;
+  line-height: 42px;
+  color: var(--colorLightDark);
+  border-bottom: 1px solid var(--colorDarkBlue);
+  background: none;
+  font-size: 14px;
+}
+.menu-item-end {
+  border: unset;
+}
+
+.menu-item img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 0px;
+  left: 10px;
+
+}
+.menu-item a {
+  color: var(--colorLightDark);
+  font-size: 14px;
+}
+
+.menu-item:hover {
+  background: var(--colorOpacityGreen);
+}

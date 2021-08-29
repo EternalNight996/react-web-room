@@ -1,0 +1,14 @@
+.back-container {
+  position: fixed;
+  right: 55px;
+  bottom: 20px;
+  z-index: 2;
+}
+.back-button {
+  background: none;
+  border: unset;
+  transition: .5s;
+}
+.back-button:hover {
+  background: none;
+}

@@ -1,0 +1,25 @@
+.loading-infinite-container {
+  height: 300px;
+  padding: 8px 24px;
+  overflow: auto;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+.loading-loading-container {
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+#content-message-id{
+}
+.sider-menu-user-chat{
+  min-height: 50px;
+  width: 100%;
+  color: var(--colorLightDark);
+  border-bottom: 1px solid var(--colorDarkBlue);
+  background: none;
+}
+.sider-menu-item-chat{}
+.sider-menu-item-chat:hover{background: var(--colorOpacityGreen);}

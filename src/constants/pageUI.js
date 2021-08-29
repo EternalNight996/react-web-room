@@ -1,0 +1,5 @@
+
+export const SHIFT_LANGUAGE = 'LANGUAGE_SHIFT'
+export const SHIFT_THEME = 'THEME_SHIFT'
+export const SAVE_USER_CONFIGS = 'CONFIGS_SAVE_USER'
+

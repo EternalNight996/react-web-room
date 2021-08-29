@@ -1,0 +1,42 @@
+@import '~antd/dist/antd.css';
+
+.header-layout {
+}
+.header-container {
+}
+.header-title-item-link {
+  margin: 40px 0px 20px 0px;
+  text-align: center;
+  line-height: 40px;
+}
+.main-title-link{
+  position: relative;
+  font-size: var(--fontSizeLarge___);
+  color: #a00;
+}
+
+.header-item-link {
+  position: absolute;
+  top:0px;
+  right: 0px;
+}
+.item-link Button{
+  position: relative;
+  background: none;
+  color: var(--colorRed);
+  border: unset;
+  border-right: 1px solid var(--colorDarkBlue);
+}
+.item-link .item-link-end {
+  border: unset;
+}
+.item-link Button:hover {
+  background: var(--colorOpacityBlue);
+}
+
+@media screen and (max-width: 768px){
+  .header-item-link {
+    display: none;
+  }
+}
+
